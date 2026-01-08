@@ -67,6 +67,13 @@ By comparing an independent **BERT-based sentiment model** with **rating-derived
 | All disagree | Very Low |
 
 ---
+## How to Run
+
+Open the Colab notebook.
+Run all cells sequentially from Task 1 to Task 6.
+Final predictions will be stored in the dataframe for analysis.
+
+---
 
 ## Requirements
 
@@ -74,8 +81,4 @@ By comparing an independent **BERT-based sentiment model** with **rating-derived
 pip install pandas numpy scikit-learn transformers torch tqdm matplotlib seaborn
 
 
-## How to Run
 
-Open the Colab notebook.
-Run all cells sequentially from Task 1 to Task 6.
-Final predictions will be stored in the dataframe for analysis.
