@@ -38,8 +38,8 @@ By comparing an independent **BERT-based sentiment model** with **rating-derived
 
 ## How to Run
 
-Open the Colab notebook.
-Run all cells sequentially from Task 1 to Task 6.
+Open the code IT9002_12010745.ipynb in Colab notebook.
+Run all cells.
 Final predictions will be stored in the dataframe for analysis.
 
 ---
