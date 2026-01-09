@@ -10,15 +10,8 @@ By comparing an independent **BERT-based sentiment model** with **rating-derived
 
 ---
 
-## Objectives
-- Compare text-based sentiment and rating-based sentiment predictions.
-- Analyse linguistic patterns behind agreement and disagreement.
-- Propose a hybrid **sentiment reliability signal** for more trustworthy customer insight.
-
----
-
 ## Dataset
-- Source: Amazon Reviews – *Health & Personal Care* (2023)
+- Source: Amazon Reviews – *Health & Personal Care* (2023) https://amazon-reviews-2023.github.io/
 - Records: 11,477 reviews  
 - Key fields:
   - `reviews` – cleaned combined title and text  
@@ -43,30 +36,6 @@ By comparing an independent **BERT-based sentiment model** with **rating-derived
 
 ---
 
-## 📊 Outputs
-
-| Column | Description |
-|--------|-------------|
-| `bert_sentiment_3` | Text-based sentiment |
-| `rating_polarity_3` | Rating-derived polarity |
-| `pred_lr` | Logistic Regression prediction |
-| `pred_svm` | SVM prediction |
-| `pred_mnb` | Naïve Bayes prediction |
-| `bert_score` | BERT confidence score |
-
----
-
-## Reliability Indicator
-
-| Pattern | Reliability |
-|--------|-------------|
-| All models agree | Very High |
-| Rating models agree, BERT differs | High |
-| Partial rating disagreement | Medium |
-| Rating models disagree | Low |
-| All disagree | Very Low |
-
----
 ## How to Run
 
 Open the Colab notebook.
@@ -78,7 +47,7 @@ Final predictions will be stored in the dataframe for analysis.
 ## Requirements
 
 ```bash
-pip install pandas numpy scikit-learn transformers torch tqdm matplotlib seaborn
+pip install pandas numpy scikit-learn transformers torch tqdm matplotlib seaborn nltk
 
 
 
